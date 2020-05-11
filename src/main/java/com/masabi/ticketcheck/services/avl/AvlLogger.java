@@ -1,5 +1,17 @@
 package com.masabi.ticketcheck.services.avl;
 
-import com.masabi.validation.Logger;
+public interface AvlLogger {
+    void d(String tag, String message);
 
-public interface AvlLogger extends Logger { }
+    void e(String tag, String message, Exception e);
+
+    void e(String tag, String message);
+
+    void w(String tag, String message, Exception e);
+
+    void w(String tag, String message);
+
+    void v(String tag, String message);
+
+    void i(String tag, String message);
+}
